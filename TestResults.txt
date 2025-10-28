@@ -1,0 +1,198 @@
+test_equilateral_medium (TestTriangle.TestTriangles.test_equilateral_medium) ... FAIL
+test_equilateral_small (TestTriangle.TestTriangles.test_equilateral_small) ... FAIL
+test_invalid_negative (TestTriangle.TestTriangles.test_invalid_negative) ... ok
+test_invalid_too_large (TestTriangle.TestTriangles.test_invalid_too_large) ... ok
+test_invalid_type (TestTriangle.TestTriangles.test_invalid_type) ... ok
+test_invalid_zero (TestTriangle.TestTriangles.test_invalid_zero) ... ok
+test_isosceles_a (TestTriangle.TestTriangles.test_isosceles_a) ... FAIL
+test_isosceles_b (TestTriangle.TestTriangles.test_isosceles_b) ... FAIL
+test_not_triangle_sum_eq (TestTriangle.TestTriangles.test_not_triangle_sum_eq) ... FAIL
+test_not_triangle_sum_lt (TestTriangle.TestTriangles.test_not_triangle_sum_lt) ... FAIL
+test_right_345 (TestTriangle.TestTriangles.test_right_345) ... FAIL
+test_right_perm (TestTriangle.TestTriangles.test_right_perm) ... FAIL
+test_scalene_a (TestTriangle.TestTriangles.test_scalene_a) ... FAIL
+test_scalene_b (TestTriangle.TestTriangles.test_scalene_b) ... FAIL
+
+======================================================================
+FAIL: test_equilateral_medium (TestTriangle.TestTriangles.test_equilateral_medium)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/TriangleProject/TestTriangle.py", line 21, in test_equilateral_medium
+    self.assertEqual(classifyTriangle(10, 10, 10), 'Equilateral')
+AssertionError: 'InvalidInput' != 'Equilateral'
+- InvalidInput
++ Equilateral
+
+
+======================================================================
+FAIL: test_equilateral_small (TestTriangle.TestTriangles.test_equilateral_small)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/TriangleProject/TestTriangle.py", line 19, in test_equilateral_small
+    self.assertEqual(classifyTriangle(1, 1, 1), 'Equilateral')
+AssertionError: 'InvalidInput' != 'Equilateral'
+- InvalidInput
++ Equilateral
+
+
+======================================================================
+FAIL: test_isosceles_a (TestTriangle.TestTriangles.test_isosceles_a)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/TriangleProject/TestTriangle.py", line 25, in test_isosceles_a
+    self.assertEqual(classifyTriangle(5, 5, 8), 'Isosceles')
+AssertionError: 'InvalidInput' != 'Isosceles'
+- InvalidInput
++ Isosceles
+
+
+======================================================================
+FAIL: test_isosceles_b (TestTriangle.TestTriangles.test_isosceles_b)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/TriangleProject/TestTriangle.py", line 27, in test_isosceles_b
+    self.assertEqual(classifyTriangle(8, 5, 5), 'Isosceles')
+AssertionError: 'InvalidInput' != 'Isosceles'
+- InvalidInput
++ Isosceles
+
+
+======================================================================
+FAIL: test_not_triangle_sum_eq (TestTriangle.TestTriangles.test_not_triangle_sum_eq)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/TriangleProject/TestTriangle.py", line 37, in test_not_triangle_sum_eq
+    self.assertEqual(classifyTriangle(1, 2, 3), 'NotATriangle')
+AssertionError: 'InvalidInput' != 'NotATriangle'
+- InvalidInput
++ NotATriangle
+
+
+======================================================================
+FAIL: test_not_triangle_sum_lt (TestTriangle.TestTriangles.test_not_triangle_sum_lt)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/TriangleProject/TestTriangle.py", line 39, in test_not_triangle_sum_lt
+    self.assertEqual(classifyTriangle(2, 3, 6), 'NotATriangle')
+AssertionError: 'InvalidInput' != 'NotATriangle'
+- InvalidInput
++ NotATriangle
+
+
+======================================================================
+FAIL: test_right_345 (TestTriangle.TestTriangles.test_right_345)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/TriangleProject/TestTriangle.py", line 13, in test_right_345
+    self.assertEqual(classifyTriangle(3, 4, 5), 'Right')
+AssertionError: 'InvalidInput' != 'Right'
+- InvalidInput
++ Right
+
+
+======================================================================
+FAIL: test_right_perm (TestTriangle.TestTriangles.test_right_perm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/TriangleProject/TestTriangle.py", line 15, in test_right_perm
+    self.assertEqual(classifyTriangle(5, 3, 4), 'Right')
+AssertionError: 'InvalidInput' != 'Right'
+- InvalidInput
++ Right
+
+
+======================================================================
+FAIL: test_scalene_a (TestTriangle.TestTriangles.test_scalene_a)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/TriangleProject/TestTriangle.py", line 31, in test_scalene_a
+    self.assertEqual(classifyTriangle(7, 8, 9), 'Scalene')
+AssertionError: 'InvalidInput' != 'Scalene'
+- InvalidInput
++ Scalene
+
+
+======================================================================
+FAIL: test_scalene_b (TestTriangle.TestTriangles.test_scalene_b)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/TriangleProject/TestTriangle.py", line 33, in test_scalene_b
+    self.assertEqual(classifyTriangle(4, 6, 9), 'Scalene')
+AssertionError: 'InvalidInput' != 'Scalene'
+- InvalidInput
++ Scalene
+
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.003s
+
+FAILED (failures=10)
+
+Summary:
+{
+  "testsRun": 14,
+  "failures": 10,
+  "errors": 0,
+  "passed": 4,
+  "status_by_test": {
+    "TestTriangle.TestTriangles.test_equilateral_medium": "FAIL",
+    "TestTriangle.TestTriangles.test_equilateral_small": "FAIL",
+    "TestTriangle.TestTriangles.test_invalid_negative": "PASS",
+    "TestTriangle.TestTriangles.test_invalid_too_large": "PASS",
+    "TestTriangle.TestTriangles.test_invalid_type": "PASS",
+    "TestTriangle.TestTriangles.test_invalid_zero": "PASS",
+    "TestTriangle.TestTriangles.test_isosceles_a": "FAIL",
+    "TestTriangle.TestTriangles.test_isosceles_b": "FAIL",
+    "TestTriangle.TestTriangles.test_not_triangle_sum_eq": "FAIL",
+    "TestTriangle.TestTriangles.test_not_triangle_sum_lt": "FAIL",
+    "TestTriangle.TestTriangles.test_right_345": "FAIL",
+    "TestTriangle.TestTriangles.test_right_perm": "FAIL",
+    "TestTriangle.TestTriangles.test_scalene_a": "FAIL",
+    "TestTriangle.TestTriangles.test_scalene_b": "FAIL"
+  }
+}
+
+===== STAGE 2: Fixed Version Results =====
+test_equilateral_medium (TestTriangle.TestTriangles.test_equilateral_medium) ... ok
+test_equilateral_small (TestTriangle.TestTriangles.test_equilateral_small) ... ok
+test_invalid_negative (TestTriangle.TestTriangles.test_invalid_negative) ... ok
+test_invalid_too_large (TestTriangle.TestTriangles.test_invalid_too_large) ... ok
+test_invalid_type (TestTriangle.TestTriangles.test_invalid_type) ... ok
+test_invalid_zero (TestTriangle.TestTriangles.test_invalid_zero) ... ok
+test_isosceles_a (TestTriangle.TestTriangles.test_isosceles_a) ... ok
+test_isosceles_b (TestTriangle.TestTriangles.test_isosceles_b) ... ok
+test_not_triangle_sum_eq (TestTriangle.TestTriangles.test_not_triangle_sum_eq) ... ok
+test_not_triangle_sum_lt (TestTriangle.TestTriangles.test_not_triangle_sum_lt) ... ok
+test_right_345 (TestTriangle.TestTriangles.test_right_345) ... ok
+test_right_perm (TestTriangle.TestTriangles.test_right_perm) ... ok
+test_scalene_a (TestTriangle.TestTriangles.test_scalene_a) ... ok
+test_scalene_b (TestTriangle.TestTriangles.test_scalene_b) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.001s
+
+OK
+
+Summary:
+{
+  "testsRun": 14,
+  "failures": 0,
+  "errors": 0,
+  "passed": 14,
+  "status_by_test": {
+    "TestTriangle.TestTriangles.test_equilateral_medium": "PASS",
+    "TestTriangle.TestTriangles.test_equilateral_small": "PASS",
+    "TestTriangle.TestTriangles.test_invalid_negative": "PASS",
+    "TestTriangle.TestTriangles.test_invalid_too_large": "PASS",
+    "TestTriangle.TestTriangles.test_invalid_type": "PASS",
+    "TestTriangle.TestTriangles.test_invalid_zero": "PASS",
+    "TestTriangle.TestTriangles.test_isosceles_a": "PASS",
+    "TestTriangle.TestTriangles.test_isosceles_b": "PASS",
+    "TestTriangle.TestTriangles.test_not_triangle_sum_eq": "PASS",
+    "TestTriangle.TestTriangles.test_not_triangle_sum_lt": "PASS",
+    "TestTriangle.TestTriangles.test_right_345": "PASS",
+    "TestTriangle.TestTriangles.test_right_perm": "PASS",
+    "TestTriangle.TestTriangles.test_scalene_a": "PASS",
+    "TestTriangle.TestTriangles.test_scalene_b": "PASS"
+  }
+}
